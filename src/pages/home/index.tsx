@@ -35,7 +35,7 @@ const Home: FunctionComponent = (): JSX.Element => {
     "",
     "",
   ];
-  const productsNumberOnPageArray = [5, 10, 15, 20];
+  const productsNumberOnPageArray = [5, 10, 15];
 
   const lastProduct = currentPage * productsNumberOnPage;
   const firstProduct = lastProduct - productsNumberOnPage;
