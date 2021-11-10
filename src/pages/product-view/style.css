@@ -1,0 +1,62 @@
+form {
+  max-width: 80vw;
+  display: flex;
+  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.block {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+
+.block label {
+  font-size: 32px;
+  line-height: 32px;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.block input,
+textarea,
+.searchbar {
+  outline: none;
+  font-size: 25px;
+  line-height: 25px;
+  color: #db0d15;
+  border: 1px solid #db0d15;
+  box-shadow: 0px 0px 1px 1px #ffb093 inset;
+  font-style: italic;
+  padding: 8px 16px;
+}
+
+.btn-block {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+form button,
+.add-btn {
+  font-size: 25px;
+  line-height: 25px;
+  padding: 12px 20px;
+}
+
+@media all and (max-width: 960px) {
+  form {
+    min-height: 100%;
+    max-width: 100%;
+  }
+
+  .searchbar {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 5px;
+  }
+}

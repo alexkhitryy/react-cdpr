@@ -1,0 +1,221 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: url("https://en.cdprojektred.com/wp-content/themes/evp-cdpr/img/triangles-white.png");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-btn {
+  cursor: pointer;
+  font-weight: bold;
+  background: #db0d15;
+  border: none;
+  transition: all 0.2s ease-in;
+}
+
+.main-btn:hover {
+  color: #ffffff;
+}
+
+.table-container {
+  min-width: 80vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-container {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 1em;
+}
+
+.search-component {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-component label {
+  margin-right: 0.5em;
+  font-size: 25px;
+  line-height: 25px;
+  font-weight: bold;
+}
+
+table {
+  min-width: 75vw;
+  max-width: 85vw;
+  border-collapse: collapse;
+}
+
+th:hover {
+  cursor: pointer;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 10px;
+}
+
+thead {
+  border-bottom: 10px solid #db0d15;
+}
+
+thead th {
+  background-color: black;
+  color: #ffffff;
+}
+
+tbody tr .btn-cell {
+  text-align: center;
+}
+
+tbody tr:hover {
+  background-color: #c1c1f5;
+}
+
+tbody td {
+  border: 2px solid #cecece;
+}
+
+tbody .no-products {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.table-btn {
+  min-width: 80%;
+  padding: 5px 15px;
+}
+
+.table-btn:hover {
+  color: #ffffff;
+}
+
+.select-container {
+  margin: 1em 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.select-container select {
+  cursor: pointer;
+  min-width: 80px;
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.85);
+  padding: 5px;
+  font-weight: bold;
+}
+
+.pagination {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagination-container {
+  width: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.page-btn {
+  min-width: 40px;
+  min-height: 40px;
+  border: 3px solid #db0d15;
+}
+
+.page-btn:hover,
+.active {
+  border: 3px solid black;
+}
+
+.modal-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.confirmation-modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: url("https://en.cdprojektred.com/wp-content/themes/evp-cdpr/img/triangles-gray.png");
+  padding: 2em;
+  min-width: 25%;
+  min-height: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.confirmation-modal h3 {
+  color: #929292;
+  text-align: center;
+  font-size: 26px;
+}
+
+.confirmation-modal .modal-btn {
+  min-width: 150px;
+  padding: 20px;
+  margin: 0 10px;
+  font-size: 20px;
+}
+
+@media all and (max-width: 960px) {
+  .page-container {
+    padding: 20px 0;
+  }
+
+  .top-container {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .search-component {
+    margin-bottom: 1em;
+  }
+
+  .table-container {
+    max-width: 100%;
+  }
+
+  table {
+    display: block;
+    min-width: 95vw;
+    overflow: scroll;
+    font-size: 14px;
+  }
+
+  .pagination-container {
+    width: 40%;
+  }
+
+  .confirmation-modal {
+    min-width: 75vw;
+  }
+
+  .confirmation-modal div {
+    min-width: 100%;
+  }
+
+  .confirmation-modal .modal-btn {
+    min-width: 100%;
+    margin: 10px 0;
+  }
+}
