@@ -82,6 +82,7 @@ const Home: FunctionComponent = (): JSX.Element => {
         </tr>
       );
     }
+
     return sortedProducts
       ?.sort((product1, product2) => {
         return compareObjects(product1, product2, sortingKey);
